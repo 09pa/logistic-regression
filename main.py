@@ -37,4 +37,4 @@ def predict_survival(data: Passenger):
     prediction = model.predict(input_df)
     result = "Survived" if prediction[0] == 1 else "Did not survive"
     return {"prediction": result}
-#to use this please uvicorn app:app --reload   <<<<---- run command in terminal
+#to use this please uvicorn app:main --reload   <<<<---- run command in terminal
